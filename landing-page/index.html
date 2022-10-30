@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a id="nv-lg" href="#home"
+          ><img src="logo1.png" id="navbar__logo" />X<img
+            id="razpay"
+            src="./AWS.png"
+            alt=""
+        /></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span
+          ><span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Features</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#command" class="navbar__links" id="commands-page"
+              >Commands</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Join Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="hero" id="home">
+      <div id="particles-js"></div>
+      <div class="hero__container">
+        <h1 class="hero__heading">
+          Automate your <span>Discord Payments</span> today
+        </h1>
+        <p class="hero__description">
+          <span>Dispay</span> is the only bot you need to automate your payments
+          in your Discord community
+        </p>
+        <div class="btn-cont">
+          <a
+            class="main__btn"
+            href="https://discord.com/api/oauth2/authorize?client_id=894169851537543189&permissions=294205320208&scope=bot#"
+            ><img class="but-img" src="./disclogo.png" alt="" />
+            <p>Invite</p></a
+          >
+          <a class="main__btn" id="community1"href="https://discord.gg/GDgFwFQdMm"
+            ><p>Join Our Community</p></a>
+        </div>
+      </div>
+      <div class="img-cont">
+        <img class="img1" src="moneyhand.png" />
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div id="particles-js"></div>
+      <div class="main__container">
+        <div class="main__img--container" data-aos="fade-right">
+          <video width="520" height="440" controls>
+            <source src="./demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="main__content" data-aos="fade-left">
+          <h2>How does our bot work</h2>
+          <p>
+            The bot uses <span>Razorpay API</span> which enables the users to
+            pay seamlessly using one single command
+          </p>
+          <button class="main__btn"><a href="#command">Know More</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="services" id="services">
+      <h1>Features</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <img src="./p2p.png" alt="" />
+          <h2>p2p Payments</h2>
+        </div>
+        <div class="services__card">
+          <img src="./disc.png" alt="" />
+          <h2>Discord Bussiness</h2>
+        </div>
+        <div class="services__card">
+          <img id="safe" src="./safe.png" alt="" />
+          <h2>Safer Transactions</h2>
+        </div>
+        <div class="services__card">
+          <img src="./wasy.png" alt="" />
+          <h2>Easy to Use</h2>
+        </div>
+      </div>
+      
+      <!-- Commands Section -->
+      <div class="commands" id="command">
+        <img src="./dispgrd.svg" class="grad" alt="">
+        <h1>Commands</h1>
+        <div data-aos="fade-up">
+        <h2>Make payments using only <span>ONE</span> single command</h2>
+        <div class="boxes">
+          <div class="left-box">
+            <p>In order to pay a user type: </p>
+            <p>/pay @<span>discord_username</span> amount</p>
+          </div>
+          <div class="right-box">
+            <img src="./payton.png" alt="Payto" />
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Features Section -->
+      <div  id="sign-up">
+        <div class="main__container" data-aos="fade-up">
+          <div class="main__content">
+            <h1>Join Us Today</h1>
+            <p>Help us on our quest to make this bot even better.</p>
+            <button class="main__btn">
+              <a href="https://discord.gg/GDgFwFQdMm" id="community2">Join Us</a>
+            </button>
+          </div>
+          <div class="main__img--container">
+            <div class="main__img--card" id="card-2">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <p class="website__rights">© DISPAY 2022. All rights reserved</p>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app1.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
